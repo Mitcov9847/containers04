@@ -28,7 +28,7 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 - `--name containers04` – имя контейнера.
 - `ubuntu bash` – запуск контейнера с образом Ubuntu и открытием оболочки Bash.
 
-### 4. Установка и запуск Apache2
+### 2. Установка и запуск Apache2
 ```sh
 apt update
 apt install apache2 -y
@@ -42,14 +42,14 @@ service apache2 start
 - `apt install apache2 -y` – устанавливает веб-сервер Apache2.
 - `service apache2 start` – запускает веб-сервер.
 
-### 5. Проверка работы веб-сервера
+### 3. Проверка работы веб-сервера
 Открываем в браузере `http://localhost:8000`.
 
 **Ожидаемый результат:** Стандартная стартовая страница Apache2.
 ![Снимок экрана 2025-03-09 202310](https://github.com/user-attachments/assets/e5631b18-cfd9-4fc1-b58f-2273483729c5)
 
 
-### 6. Создание HTML-файла
+### 4. Создание HTML-файла
 ```sh
 ls -l /var/www/html/
 echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
@@ -58,9 +58,10 @@ echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 - `ls -l /var/www/html/` – просмотр содержимого папки сайта.
 - `echo '<h1>Hello, World!</h1>' > /var/www/html/index.html` – создание HTML-файла.
 ![Снимок экрана 2025-03-09 202342](https://github.com/user-attachments/assets/18626a8c-a3d7-4310-a712-d6ce56801196)
-![Снимок экрана 2025-03-09 202333](https://github.com/user-attachments/assets/c705c4ad-1364-48af-85a3-70b4ddebbc9e)
+![Снимок экрана 2025-03-09 202347](https://github.com/user-attachments/assets/6c3aebd4-da2d-4b1e-8464-96a9e14bbe0a)
 
-### 7. Просмотр конфигурации Apache2
+
+### 5. Просмотр конфигурации Apache2
 ```sh
 cd /etc/apache2/sites-enabled/
 cat 000-default.conf
@@ -68,7 +69,7 @@ cat 000-default.conf
 ![Снимок экрана 2025-03-09 203220](https://github.com/user-attachments/assets/9b7e10c9-2a19-4e94-bd23-f07341ef63d7)
 ##### На скриншоте показан конфигурационный файл 000-default.conf веб-сервера Apache2. Этот файл задает параметры для обработки HTTP-запросов, указывая корневую директорию сайта (/var/www/html), путь к логам (error.log и access.log) и настройки виртуального хоста. Конфигурация определяет, как сервер принимает и обрабатывает входящие соединения на порту 80.
 
-### 9. Просмотр контейнеров
+### 6. Просмотр контейнеров
 ```sh
 docker ps -a
 ```
