@@ -20,7 +20,7 @@
 ```sh
 docker run -ti -p 8000:80 --name containers04 ubuntu bash
 ```
-![Снимок экрана 2025-03-09 203220](https://github.com/user-attachments/assets/dea72fc0-2036-4f83-9c94-6ea6b77dbc24)
+![Снимок экрана 2025-03-09 202017](https://github.com/user-attachments/assets/87958fb5-7a8c-4357-9917-0c09554a84b1)
 
 **Объяснение:** 
 - `docker run -ti` – запуск контейнера в интерактивном режиме.
