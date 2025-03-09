@@ -16,20 +16,12 @@
 
 ## Выполнение работы
 
-### 1. Клонирование репозитория
- git clone https://github.com/username/containers04.git
- cd containers04
-
-
-### 2. Создание файла `README.md`
-```sh
-touch README.md
-```
-
-### 3. Запуск контейнера Ubuntu с пробросом порта 8000
+### 1. Запуск контейнера Ubuntu с портом 8000
 ```sh
 docker run -ti -p 8000:80 --name containers04 ubuntu bash
 ```
+![Снимок экрана 2025-03-09 203220](https://github.com/user-attachments/assets/dea72fc0-2036-4f83-9c94-6ea6b77dbc24)
+
 **Объяснение:** 
 - `docker run -ti` – запуск контейнера в интерактивном режиме.
 - `-p 8000:80` – проброс порта (локальный порт 8000 перенаправляется на порт 80 контейнера).
