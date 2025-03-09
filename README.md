@@ -28,21 +28,15 @@ docker run -ti -p 8000:80 --name containers04 ubuntu bash
 - `--name containers04` – имя контейнера.
 - `ubuntu bash` – запуск контейнера с образом Ubuntu и открытием оболочки Bash.
 
----
-**Вывод в консоли:**
-```
-Unable to find image 'ubuntu:latest' locally
-latest: Pulling from library/ubuntu
-...
-root@container_id:/#
-```
-
 ### 4. Установка и запуск Apache2
 ```sh
 apt update
 apt install apache2 -y
 service apache2 start
 ```
+![Снимок экрана 2025-03-09 202140](https://github.com/user-attachments/assets/fcb79149-c2f7-46de-ab0d-90853668d907)
+![Снимок экрана 2025-03-09 202200](https://github.com/user-attachments/assets/2ac76c5a-b988-4c4b-b629-cf440aaa55d6)
+
 **Объяснение:** 
 - `apt update` – обновляет список пакетов.
 - `apt install apache2 -y` – устанавливает веб-сервер Apache2.
