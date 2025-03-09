@@ -80,6 +80,7 @@ CONTAINER ID   IMAGE     COMMAND   CREATED       STATUS       NAMES
 123456789abc   ubuntu    "bash"    5 minutes ago   Exited       containers04
 ```
 ![Снимок экрана 2025-03-09 203236](https://github.com/user-attachments/assets/9e9e770d-682c-4a1b-9528-9eedfd0ab746)
+##### Показывает список всех контейнеров, включая остановленные.
 
 
 ## Выводы
