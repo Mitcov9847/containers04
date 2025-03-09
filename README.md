@@ -57,32 +57,16 @@ echo '<h1>Hello, World!</h1>' > /var/www/html/index.html
 **Объяснение:**
 - `ls -l /var/www/html/` – просмотр содержимого папки сайта.
 - `echo '<h1>Hello, World!</h1>' > /var/www/html/index.html` – создание HTML-файла.
-
----
-**Вывод в консоли:**
-```
-total 0
--rw-r--r-- 1 root root 20 Mar 9 10:00 index.html
-```
-
-Открываем `http://localhost:8000` и видим `Hello, World!`.
-
-_Скриншот результата:_
-
-![Скриншот 2](screenshot2.png)
+![Снимок экрана 2025-03-09 202342](https://github.com/user-attachments/assets/18626a8c-a3d7-4310-a712-d6ce56801196)
+![Снимок экрана 2025-03-09 202333](https://github.com/user-attachments/assets/c705c4ad-1364-48af-85a3-70b4ddebbc9e)
 
 ### 7. Просмотр конфигурации Apache2
 ```sh
 cd /etc/apache2/sites-enabled/
 cat 000-default.conf
 ```
-**Вывод в консоли:**
-```
-<VirtualHost *:80>
-    DocumentRoot /var/www/html
-    ...
-</VirtualHost>
-```
+![Снимок экрана 2025-03-09 203220](https://github.com/user-attachments/assets/9b7e10c9-2a19-4e94-bd23-f07341ef63d7)
+###### На скриншоте показан конфигурационный файл 000-default.conf веб-сервера Apache2. Этот файл задает параметры для обработки HTTP-запросов, указывая корневую директорию сайта (/var/www/html), путь к логам (error.log и access.log) и настройки виртуального хоста. Конфигурация определяет, как сервер принимает и обрабатывает входящие соединения на порту 80.
 
 ### 8. Завершение работы
 ```sh
