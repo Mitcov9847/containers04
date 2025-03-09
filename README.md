@@ -42,23 +42,12 @@ service apache2 start
 - `apt install apache2 -y` – устанавливает веб-сервер Apache2.
 - `service apache2 start` – запускает веб-сервер.
 
----
-**Вывод в консоли:**
-```
-Reading package lists... Done
-Building dependency tree... Done
-...
-Starting Apache httpd web server apache2
-```
-
 ### 5. Проверка работы веб-сервера
 Открываем в браузере `http://localhost:8000`.
 
 **Ожидаемый результат:** Стандартная стартовая страница Apache2.
+![Снимок экрана 2025-03-09 202310](https://github.com/user-attachments/assets/e5631b18-cfd9-4fc1-b58f-2273483729c5)
 
-_Скриншот результата:_
-
-![Скриншот 1](screenshot1.png)
 
 ### 6. Создание HTML-файла
 ```sh
